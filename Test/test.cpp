@@ -7,6 +7,10 @@ TEST(TestSuiteSample, TestSample)
     ASSERT_EQ(6,s);
 }
 
+TEST(TestSuiteSample, AddsNegativeNumbers) {
+    ASSERT_EQ(-7, sum(-2, -5));
+}
+
 int main(int argc, char**argv)
 {
     testing::InitGoogleTest(&argc, argv);
