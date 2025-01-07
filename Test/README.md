@@ -16,6 +16,8 @@ Assertions Guide
 <h3>Fatal vs non-fatal:</h3>
 ## Assertions Guide
 
+## Assertions Guide
+
 ### Fatal vs Non-Fatal
 
 | Fatal                        | Non-Fatal                    | What it tests           |
@@ -49,4 +51,6 @@ Assertions Guide
 |--------------------------------------------------|--------------------------------------------------|---------------------------------------------------------------------|
 | `ASSERT_THROW(some_statement, exceptionType);`   | `EXPECT_THROW(some_statement, exceptionType);`   | some_statement throws an exception of the exact given type          |
 | `ASSERT_ANY_THROW(some_statement);`              | `EXPECT_ANY_THROW(some_statement);`              | some_statement throws an exception of any type                      |
+| `ASSERT_NO_THROW(some_statement);`               | `EXPECT_NO_THROW(some_statement);`               | some_statement throws no exception                                  |
+
 
