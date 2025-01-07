@@ -133,8 +133,8 @@ build/_deps/googletest-src/googletest/clean: build/_deps/googletest-src/googlete
 # All Build rule for target.
 CMakeFiles/testRunner.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/testRunner.dir/all: build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/all
-CMakeFiles/testRunner.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
 CMakeFiles/testRunner.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/testRunner.dir/all: build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shree/googleTest/Test/build/CMakeFiles --progress-num=9,10 "Built target testRunner"
