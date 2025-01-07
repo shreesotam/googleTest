@@ -14,7 +14,7 @@ Assertions can be used to check if an exception was thrown, or what type of exce
 
 
 <h3>Fatal vs non-fatal:</h3>
-![image](https://github.com/user-attachments/assets/af7c54ef-deab-44ef-b7be-dab7700046b2)
+![alt text](image-3.png)
 
 
 
