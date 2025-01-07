@@ -55,6 +55,18 @@ TEST(StringTest, upperTest) {
     
 }
 
+TEST(SqurtTest, negativeArgumentTEst)
+{
+    //ASSERT_ANY_THROW(mySqrt(-9));
+    ASSERT_THROW(mySqrt(-9), std::runtime_error);
+}
+
+TEST(SqurtTest, positiveArgumentTEst)
+{
+    //ASSERT_ANY_THROW(mySqrt(-9));
+    ASSERT_NO_THROW(mySqrt(9));
+}
+
 int main(int argc, char**argv)
 {
     testing::InitGoogleTest(&argc, argv);
