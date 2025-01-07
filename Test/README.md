@@ -14,12 +14,14 @@ Assertions can be used to check if an exception was thrown, or what type of exce
 
 
 <h3>Fatal vs non-fatal:</h3>
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/af7c54ef-deab-44ef-b7be-dab7700046b2)
+
 
 
 <h3>Assertions on C strings (char*):</h3>
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/c473378f-e162-4a84-b358-ba1ef938f927)
+
 
 
 <h3>Assertions on exceptions:</h3>
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/8aa31690-3617-4b7a-be7c-4607961edf3e)
