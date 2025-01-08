@@ -5,6 +5,7 @@
 #include <vector>
 #include <iostream>
 #include <tuple>
+#include <gmock/gmock.h>
 // in case of failure there are fatal and no-fatal failure
 //ASSERT_# is fatal. fatal means no further execution
 //EXPECT_# is non-fatal. non-fatal means further execution and test continue
@@ -171,6 +172,32 @@ INSTANTIATE_TEST_SUITE_P(InRangeTrue, ValidatorFixture, testing::Values(
         std::make_tuple(4, false),
         std::make_tuple(11, false),
         std::make_tuple(100, false))); //test suite
+
+
+class Someclass
+{
+    public:
+    Someclass() = default;
+    virtual void someMethod()
+    {
+        std::cout<<"say something/n";
+    }
+};
+
+class MockedClass : public Someclass
+{
+    public:
+    MockedClass() = default;
+    MOCK_METHOD0(someMethod, void());
+
+};
+
+TEST(TestSample, TestMock)
+{
+    MockedClass mc;
+    EXPECT_CALL(mc, someMethod()).Times(1);
+    mc.someMethod();
+}
 
 int main(int argc, char**argv)
 {

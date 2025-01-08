@@ -70,3 +70,12 @@ Parameterized tests can be used to generate tests that have the same body, but d
 When you generate a test, the expected output values can be packed together with the input values using complex data structures.
 
 Generators can be used to generate input values for the test.
+
+<h2>G MOck</h2>
+Mocking is usually down by extending the class and mocking some of its method. Either overriding the method to do nothing or you can set the behaviour through the test. It can also be used to check if certain method was call or not.
+
+MOCK_METHOD0(return type, method name, parameter in paranthesis"(int, int))
+
+MOCK_METHOD0(someMethod, void()); //legacy way
+
+Others are Fake and STUB

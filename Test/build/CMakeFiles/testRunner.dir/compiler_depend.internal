@@ -247,4 +247,35 @@ CMakeFiles/testRunner.dir/test.cpp.o
  /usr/include/c++/12.2.1/pstl/glue_algorithm_defs.h
  /root/googleTest/MyMathLib/inc/Account.h
  /root/googleTest/MyMathLib/inc/Validator.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h
+ /usr/include/limits.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h
+ /usr/include/c++/12.2.1/cmath
+ /usr/include/math.h
+ /usr/include/c++/12.2.1/bits/specfun.h
+ /usr/include/c++/12.2.1/tr1/gamma.tcc
+ /usr/include/c++/12.2.1/tr1/special_function_util.h
+ /usr/include/c++/12.2.1/tr1/bessel_function.tcc
+ /usr/include/c++/12.2.1/tr1/beta_function.tcc
+ /usr/include/c++/12.2.1/tr1/ell_integral.tcc
+ /usr/include/c++/12.2.1/tr1/exp_integral.tcc
+ /usr/include/c++/12.2.1/tr1/hypergeometric.tcc
+ /usr/include/c++/12.2.1/tr1/legendre_function.tcc
+ /usr/include/c++/12.2.1/tr1/modified_bessel_func.tcc
+ /usr/include/c++/12.2.1/tr1/poly_hermite.tcc
+ /usr/include/c++/12.2.1/tr1/poly_laguerre.tcc
+ /usr/include/c++/12.2.1/tr1/riemann_zeta.tcc
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h
+ /root/googleTest/Test/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h
 
