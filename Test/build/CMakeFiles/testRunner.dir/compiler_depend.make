@@ -244,8 +244,11 @@ CMakeFiles/testRunner.dir/test.cpp.o: /root/googleTest/Test/test.cpp \
   /root/googleTest/MyMathLib/inc/MyMathLib.h \
   /usr/include/c++/12.2.1/algorithm \
   /usr/include/c++/12.2.1/pstl/glue_algorithm_defs.h \
-  /root/googleTest/MyMathLib/inc/Account.h
+  /root/googleTest/MyMathLib/inc/Account.h \
+  /root/googleTest/MyMathLib/inc/Validator.h
 
+
+/root/googleTest/MyMathLib/inc/Validator.h:
 
 /usr/include/c++/12.2.1/algorithm:
 

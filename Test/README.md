@@ -54,3 +54,19 @@ Assertions Guide
 | `ASSERT_NO_THROW(some_statement);`               | `EXPECT_NO_THROW(some_statement);`               | some_statement throws no exception                                  |
 
 
+<h2>Fixtures Summary</h2>
+A fixture is useful for removing code duplication.
+
+It's used where the setup phase and cleanup phase are similar.
+
+It's a class where the test setup is written in the SetUp() method and the cleanup is in TearDown().
+
+A new fixture is created for each test.
+
+
+
+Parameterized tests can be used to generate tests that have the same body, but different input values.
+
+When you generate a test, the expected output values can be packed together with the input values using complex data structures.
+
+Generators can be used to generate input values for the test.

@@ -1,8 +1,10 @@
 #include <gtest/gtest.h>
 #include "MyMathLib.h"
 #include "Account.h"
+#include "Validator.h"
 #include <vector>
 #include <iostream>
+#include <tuple>
 // in case of failure there are fatal and no-fatal failure
 //ASSERT_# is fatal. fatal means no further execution
 //EXPECT_# is non-fatal. non-fatal means further execution and test continue
@@ -139,6 +141,36 @@ TEST_F(AccountTestFixture, TransferInsufficientFundTest)
     Account to;
     ASSERT_THROW(account.transfer(to,300), std::runtime_error);
 }
+
+//fixture with param
+class ValidatorFixture: public testing::TestWithParam<std::tuple<int, bool>> //test fixture
+{
+    public:
+    protected:
+    Validator mValidator{5, 10};
+};
+
+TEST_P(ValidatorFixture, TestInRange) //test body
+{
+    std::tuple<int, bool> tuple= GetParam();
+    int param = std::get<0>(tuple); //1st value of the tuple for param
+    bool expectedValue = std::get<1>(tuple); //2nd value of the tuple for result
+    bool isInside = mValidator.inRange(param); 
+    ASSERT_EQ(expectedValue, isInside);
+
+}
+
+INSTANTIATE_TEST_SUITE_P(InRangeTrue, ValidatorFixture, testing::Values(
+        std::make_tuple(-50, false),
+        std::make_tuple(-5, false),
+        std::make_tuple(5, true),
+        std::make_tuple(6, true),
+        std::make_tuple(7, true),
+        std::make_tuple(9, true),
+        std::make_tuple(10, true),
+        std::make_tuple(4, false),
+        std::make_tuple(11, false),
+        std::make_tuple(100, false))); //test suite
 
 int main(int argc, char**argv)
 {
