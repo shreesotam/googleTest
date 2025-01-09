@@ -79,3 +79,21 @@ MOCK_METHOD0(return type, method name, parameter in paranthesis"(int, int))
 MOCK_METHOD0(someMethod, void()); //legacy way
 
 Others are Fake and STUB
+
+<h2>Mock call behaviour</h2>
+ACTION:
+setting action:
+1.WillOnce
+2.WillRepeatedly
+3.WillByDefault
+4.Return
+5.ReturnRef
+       
+       example: EXPECT_CALL(object, someMethod().WillOnce(ThrowSomeException));
+
+For expected no. of call:
+1.AnyNumber()
+2.AtLeast(n)
+3.AtMost(n)
+4.Between(m,n)
+5.Exactly(n) or "n"
