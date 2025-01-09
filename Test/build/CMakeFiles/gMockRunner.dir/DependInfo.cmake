@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/googleTest/Test/test.cpp" "CMakeFiles/testRunner.dir/test.cpp.o" "gcc" "CMakeFiles/testRunner.dir/test.cpp.o.d"
+  "/root/googleTest/Test/gMock.cpp" "CMakeFiles/gMockRunner.dir/gMock.cpp.o" "gcc" "CMakeFiles/gMockRunner.dir/gMock.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

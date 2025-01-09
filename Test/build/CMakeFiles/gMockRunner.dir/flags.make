@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/root/googleTest/Test/../MyMathLib/inc -isystem /root/googleTest/Test/build/_deps/googletest-src/googletest/include -isystem /root/googleTest/Test/build/_deps/googletest-src/googletest -isystem /root/googleTest/Test/build/_deps/googletest-src/googlemock/include -isystem /root/googleTest/Test/build/_deps/googletest-src/googlemock
 
-CXX_FLAGS = 
+CXX_FLAGS =  -g
 

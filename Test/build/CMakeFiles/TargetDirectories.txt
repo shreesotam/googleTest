@@ -1,4 +1,4 @@
-/root/googleTest/Test/build/CMakeFiles/testRunner.dir
+/root/googleTest/Test/build/CMakeFiles/gMockRunner.dir
 /root/googleTest/Test/build/CMakeFiles/edit_cache.dir
 /root/googleTest/Test/build/CMakeFiles/rebuild_cache.dir
 /root/googleTest/Test/build/CMakeFiles/list_install_components.dir

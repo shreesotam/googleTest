@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/testRunner.dir/test.cpp.o -o testRunner   -L/root/googleTest/Test/../MyMathLib/lib  -Wl,-rpath,/root/googleTest/Test/../MyMathLib/lib -lMyMathLib lib/libgtest_main.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a 

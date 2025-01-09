@@ -23,9 +23,14 @@ include_directories("../MyMathLib/inc")
 # Specify where the linker should look for libraries
 link_directories(${MYMATHLIB_DIR})
 
+# Enable debug symbols
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
 # Create the test executable
-add_executable(testRunner test.cpp)
+#add_executable(testRunner test.cpp)
+add_executable(gMockRunner gMock.cpp)
 
 # Link the test executable with GoogleTest and MyMathLib
 # Link the test executable with GoogleTest and MyMathLib
-target_link_libraries(testRunner MyMathLib gtest_main gmock_main)
+#target_link_libraries(testRunner MyMathLib gtest_main gmock_main)
+target_link_libraries(gMockRunner MyMathLib gtest_main gmock_main)

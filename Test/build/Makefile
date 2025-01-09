@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testRunner
+# Target rules for targets named gMockRunner
 
 # Build rule for target.
-testRunner: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testRunner
-.PHONY : testRunner
+gMockRunner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gMockRunner
+.PHONY : gMockRunner
 
 # fast build rule for target.
-testRunner/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/build
-.PHONY : testRunner/fast
+gMockRunner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gMockRunner.dir/build.make CMakeFiles/gMockRunner.dir/build
+.PHONY : gMockRunner/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -226,29 +226,29 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build.make build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-test.o: test.cpp.o
-.PHONY : test.o
+gMock.o: gMock.cpp.o
+.PHONY : gMock.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/test.cpp.o
-.PHONY : test.cpp.o
+gMock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gMockRunner.dir/build.make CMakeFiles/gMockRunner.dir/gMock.cpp.o
+.PHONY : gMock.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+gMock.i: gMock.cpp.i
+.PHONY : gMock.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/test.cpp.i
-.PHONY : test.cpp.i
+gMock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gMockRunner.dir/build.make CMakeFiles/gMockRunner.dir/gMock.cpp.i
+.PHONY : gMock.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+gMock.s: gMock.cpp.s
+.PHONY : gMock.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRunner.dir/build.make CMakeFiles/testRunner.dir/test.cpp.s
-.PHONY : test.cpp.s
+gMock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gMockRunner.dir/build.make CMakeFiles/gMockRunner.dir/gMock.cpp.s
+.PHONY : gMock.cpp.s
 
 # Help Target
 help:
@@ -262,14 +262,14 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... gMockRunner"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... testRunner"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... gMock.o"
+	@echo "... gMock.i"
+	@echo "... gMock.s"
 .PHONY : help
 
 
