@@ -97,3 +97,6 @@ For expected no. of call:
 3.AtMost(n)
 4.Between(m,n)
 5.Exactly(n) or "n"
+
+<h2>Matcher</h2>
+Ge(2), Lt(5), Le(8), Eq(5)
